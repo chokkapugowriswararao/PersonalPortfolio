@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gowriswara Rao Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/e14a933d4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-business-time" onclick="Closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Web Developer</p>
+        <h1>Hi, I'm <span>Gowriswara Rao</span><br>from NIT Raipur</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image1-removebg.jpg" alt="Profile Picture" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I’m Chokkapu Gowriswara Rao, a 3rd-year B.Tech student in Information Technology at NIT Raipur. I am passionate about full-stack web development, specializing in the MERN stack. I've worked on real-world applications involving authentication, scalability, and responsive UI design. I'm also skilled in competitive programming and have solved over 450 problems across platforms like Leetcode, Codeforces, and GFG.</p>
+          
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages:</span><br>C++, Python</li>
+              <li><span>Web Development:</span><br>HTML, CSS, JavaScript, React.js, Node.js, MongoDB, Express.js, MySQL</li>
+              <li><span>Other Skills:</span><br>Machine Learning, Git, Render, DBMS, DSA, OOPs, Operating Systems</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Apr 2022 - Present</span><br>Volunteer at Sanskriti Club, NIT Raipur</li>
+              <li><span>Web Development Intern</span><br>INTERNPE Internship (Completed)</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2026</span><br>B.Tech in IT, NIT Raipur, CGPA: 8.62</li>
+              <li><span>2022</span><br>Intermediate, Sri Viswa College, Vishakhapatnam, 96%</li>
+              <li><span>2020</span><br>SSC, Narayana School, Bobbili, 98.5%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Skills</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Full Stack Development</h2>
+          <p>MERN stack applications with user authentication, responsive UI, and scalable features.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Competitive Programming</h2>
+          <p>450+ problems solved across Leetcode, Codeforces, CodeChef, and GFG. Max Leetcode rating: 1756.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.png" />
+          <div class="layer">
+            <h3>Sustainable Organic Farming</h3>
+            <p>Full-stack app connecting brokers and farmers to reuse animal waste. Features secure login, real-time notifications, and smooth UI.</p>
+            <a href="https://github.com/chokkapugowriswararao/ORGANICFARMING" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-2.png" />
+          <div class="layer">
+            <h3>Chat Application</h3>
+            <p>Authentication with JWT, password hashing, form validation, and dynamic frontend.</p>
+            <a href="https://github.com/chokkapugowriswararao/CHATTING_APPLICATION" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-3.png" />
+          <div class="layer">
+            <h3>Ecommerce Website</h3>
+            <p>Features dynamic product listings, shopping cart, and responsive design.</p>
+            <a href="https://github.com/chokkapugowriswararao/Shopping-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/chokkapugowriswararao" target="_blank" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> gowriswararao203@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> +91-6281578496</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/gowriswara-rao-chokkapu-72a49a281"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/chokkapugowriswararao"><i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/gowrichokkapu_123/"><i class="fa-solid fa-code"></i></a>
+          </div>
+          <a href="CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Chokkapu Gowriswara Rao</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) tablink.classList.remove("active-link");
+      for (tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function openmenu() {
+      document.getElementById("sidemenu").style.right = "0";
+    }
+    function Closemenu() {
+      document.getElementById("sidemenu").style.right = "-200px";
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqA_10LA3Gl5MK4yzB8-bhSNiCo3R-dAtwbQSGNX5LXnGtgein5Bv73phXTJArqUzX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(() => msg.innerHTML = "", 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    });
+  </script>
+</body>
+</html>
